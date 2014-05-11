@@ -10,12 +10,13 @@
 #import "MPSettingsHelper.h"
 #import "HTTPServer.h"
 #import "MPIconHelper.h"
-#import "MPConnection.h"
 #import "MPServerRequestHandling.h"
+#import "KPHServer.h"
+#import "MPKeePassHttpClient.h"
 
 @interface MPServerDaemon () {
 @private
-  HTTPServer *server;
+  KPHServer *server;
   NSStatusItem *statusItem;
 }
 
@@ -48,10 +49,6 @@
     if(!server) {
       [self _setupServer];
     }
-    NSError *error= nil;
-    if(![server start:&error]) {
-      [NSApp presentError:error];
-    }
     // setup menu item
   }
   else {
@@ -82,12 +79,8 @@
 
 - (void)_setupServer {
   NSAssert(server == nil, @"Server should be nil");
-  server = [[HTTPServer alloc] init];
-  [server setConnectionClass:[MPConnection class]];
-  [server setInterface:@"localhost"];
-  NSInteger port = [[NSUserDefaults standardUserDefaults] integerForKey:kMPSettingsKeyHttpPort];
-  [server setPort:port];
-
+  server = [KPHServer new];
+  [server startWithClient:[MPKeePassHttpClient new]];
 }
 
 @end

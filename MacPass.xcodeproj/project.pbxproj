@@ -284,12 +284,6 @@
 		6021FE8D18E1617300C3BC51 /* PasswordCreatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6021FE8F18E1617300C3BC51 /* PasswordCreatorView.xib */; };
 		6021FE9818E1650F00C3BC51 /* DatabaseSettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6021FE9A18E1650F00C3BC51 /* DatabaseSettingsWindow.xib */; };
 		B62504AA191FD6C800E7A71F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B6250330191FD6C800E7A71F /* .gitignore */; };
-		B625056E191FD6C900E7A71F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B62503FC191FD6C800E7A71F /* MainMenu.xib */; };
-		B625056F191FD6C900E7A71F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B62503FE191FD6C800E7A71F /* Credits.rtf */; };
-		B6250570191FD6C900E7A71F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6250400191FD6C800E7A71F /* InfoPlist.strings */; };
-		B6250571191FD6C900E7A71F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6250402191FD6C800E7A71F /* Images.xcassets */; };
-		B6250572191FD6C900E7A71F /* keepasshttp-objc-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6250403191FD6C800E7A71F /* keepasshttp-objc-Info.plist */; };
-		B6250573191FD6C900E7A71F /* KPHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6250406191FD6C800E7A71F /* KPHAppDelegate.m */; };
 		B6250574191FD6C900E7A71F /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = B625040B191FD6C800E7A71F /* DDData.m */; };
 		B6250575191FD6C900E7A71F /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B625040D191FD6C800E7A71F /* DDNumber.m */; };
 		B6250576191FD6C900E7A71F /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = B625040F191FD6C800E7A71F /* DDRange.m */; };
@@ -322,7 +316,6 @@
 		B6250591191FD6C900E7A71F /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B625044C191FD6C800E7A71F /* CJSONDeserializer.m */; };
 		B6250592191FD6C900E7A71F /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B625044E191FD6C800E7A71F /* CJSONSerializer.m */; };
 		B6250593191FD6C900E7A71F /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6250451191FD6C800E7A71F /* NSDictionary_JSONExtensions.m */; };
-		B6250594191FD6C900E7A71F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6250452191FD6C800E7A71F /* main.m */; };
 		B6250595191FD6C900E7A71F /* KPHKeePassClientMock.m in Sources */ = {isa = PBXBuildFile; fileRef = B6250455191FD6C800E7A71F /* KPHKeePassClientMock.m */; };
 		B6250596191FD6C900E7A71F /* KPHDialogueEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6250459191FD6C800E7A71F /* KPHDialogueEngine.m */; };
 		B6250597191FD6C900E7A71F /* KPHGeneratedPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = B625045B191FD6C800E7A71F /* KPHGeneratedPassword.m */; };
@@ -355,10 +348,6 @@
 		B62505B2191FD6C900E7A71F /* KPHResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B625049A191FD6C800E7A71F /* KPHResponse.m */; };
 		B62505B3191FD6C900E7A71F /* KPHResponseEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B625049C191FD6C800E7A71F /* KPHResponseEntry.m */; };
 		B62505B4191FD6C900E7A71F /* KPHResponseStringField.m in Sources */ = {isa = PBXBuildFile; fileRef = B625049E191FD6C800E7A71F /* KPHResponseStringField.m */; };
-		B62505B5191FD6C900E7A71F /* ChromeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B62504A3191FD6C800E7A71F /* ChromeTests.m */; };
-		B62505B6191FD6C900E7A71F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B62504A4191FD6C800E7A71F /* InfoPlist.strings */; };
-		B62505B7191FD6C900E7A71F /* FirefoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B62504A6191FD6C800E7A71F /* FirefoxTests.m */; };
-		B62505B8191FD6C900E7A71F /* keepasshttp-objcTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62504A7191FD6C800E7A71F /* keepasshttp-objcTests-Info.plist */; };
 		B62505B9191FD6C900E7A71F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B62504A8191FD6C800E7A71F /* LICENSE.txt */; };
 		B62505BA191FD6C900E7A71F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B62504A9191FD6C800E7A71F /* README.md */; };
 /* End PBXBuildFile section */
@@ -956,14 +945,6 @@
 		6021FEA218E1652000C3BC51 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DatabaseSettingsWindow.strings"; sourceTree = "<group>"; };
 		6E719715172058BA00E4C5FC /* MPDatabaseVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPDatabaseVersion.h; sourceTree = "<group>"; };
 		B6250330191FD6C800E7A71F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B62503FD191FD6C800E7A71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B62503FF191FD6C800E7A71F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		B6250401191FD6C800E7A71F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B6250402191FD6C800E7A71F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B6250403191FD6C800E7A71F /* keepasshttp-objc-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "keepasshttp-objc-Info.plist"; sourceTree = "<group>"; };
-		B6250404191FD6C800E7A71F /* keepasshttp-objc-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "keepasshttp-objc-Prefix.pch"; sourceTree = "<group>"; };
-		B6250405191FD6C800E7A71F /* KPHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPHAppDelegate.h; sourceTree = "<group>"; };
-		B6250406191FD6C800E7A71F /* KPHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPHAppDelegate.m; sourceTree = "<group>"; };
 		B625040A191FD6C800E7A71F /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
 		B625040B191FD6C800E7A71F /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
 		B625040C191FD6C800E7A71F /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
@@ -1028,7 +1009,6 @@
 		B625044F191FD6C800E7A71F /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
 		B6250450191FD6C800E7A71F /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		B6250451191FD6C800E7A71F /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
-		B6250452191FD6C800E7A71F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6250454191FD6C800E7A71F /* KPHKeePassClientMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPHKeePassClientMock.h; sourceTree = "<group>"; };
 		B6250455191FD6C800E7A71F /* KPHKeePassClientMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPHKeePassClientMock.m; sourceTree = "<group>"; };
 		B6250458191FD6C800E7A71F /* KPHDialogueEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPHDialogueEngine.h; sourceTree = "<group>"; };
@@ -1096,10 +1076,6 @@
 		B625049C191FD6C800E7A71F /* KPHResponseEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPHResponseEntry.m; sourceTree = "<group>"; };
 		B625049D191FD6C800E7A71F /* KPHResponseStringField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPHResponseStringField.h; sourceTree = "<group>"; };
 		B625049E191FD6C800E7A71F /* KPHResponseStringField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPHResponseStringField.m; sourceTree = "<group>"; };
-		B62504A3191FD6C800E7A71F /* ChromeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromeTests.m; sourceTree = "<group>"; };
-		B62504A5191FD6C800E7A71F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B62504A6191FD6C800E7A71F /* FirefoxTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirefoxTests.m; sourceTree = "<group>"; };
-		B62504A7191FD6C800E7A71F /* keepasshttp-objcTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "keepasshttp-objcTests-Info.plist"; sourceTree = "<group>"; };
 		B62504A8191FD6C800E7A71F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		B62504A9191FD6C800E7A71F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1992,7 +1968,6 @@
 			children = (
 				B6250330191FD6C800E7A71F /* .gitignore */,
 				B62503FB191FD6C800E7A71F /* keepasshttp-objc */,
-				B62504A2191FD6C800E7A71F /* keepasshttp-objcTests */,
 				B62504A8191FD6C800E7A71F /* LICENSE.txt */,
 				B62504A9191FD6C800E7A71F /* README.md */,
 			);
@@ -2002,16 +1977,7 @@
 		B62503FB191FD6C800E7A71F /* keepasshttp-objc */ = {
 			isa = PBXGroup;
 			children = (
-				B62503FC191FD6C800E7A71F /* MainMenu.xib */,
-				B62503FE191FD6C800E7A71F /* Credits.rtf */,
-				B6250400191FD6C800E7A71F /* InfoPlist.strings */,
-				B6250402191FD6C800E7A71F /* Images.xcassets */,
-				B6250403191FD6C800E7A71F /* keepasshttp-objc-Info.plist */,
-				B6250404191FD6C800E7A71F /* keepasshttp-objc-Prefix.pch */,
-				B6250405191FD6C800E7A71F /* KPHAppDelegate.h */,
-				B6250406191FD6C800E7A71F /* KPHAppDelegate.m */,
 				B6250407191FD6C800E7A71F /* Lib */,
-				B6250452191FD6C800E7A71F /* main.m */,
 				B6250453191FD6C800E7A71F /* Mocks */,
 				B6250456191FD6C800E7A71F /* Source */,
 			);
@@ -2306,17 +2272,6 @@
 			path = KeePassHttp;
 			sourceTree = "<group>";
 		};
-		B62504A2191FD6C800E7A71F /* keepasshttp-objcTests */ = {
-			isa = PBXGroup;
-			children = (
-				B62504A3191FD6C800E7A71F /* ChromeTests.m */,
-				B62504A4191FD6C800E7A71F /* InfoPlist.strings */,
-				B62504A6191FD6C800E7A71F /* FirefoxTests.m */,
-				B62504A7191FD6C800E7A71F /* keepasshttp-objcTests-Info.plist */,
-			);
-			path = "keepasshttp-objcTests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2462,7 +2417,6 @@
 			files = (
 				B6250584191FD6C900E7A71F /* About.txt in Resources */,
 				4C17F108184E6B6C00E85625 /* 31_PrintTemplate.pdf in Resources */,
-				B6250572191FD6C900E7A71F /* keepasshttp-objc-Info.plist in Resources */,
 				4C77E37115B84A240093A587 /* InfoPlist.strings in Resources */,
 				4C77E37D15B84A240093A587 /* MainMenu.xib in Resources */,
 				4CA0B2ED15BCADAC00654E32 /* SettingsWindow.xib in Resources */,
@@ -2483,11 +2437,9 @@
 				4CD78ABC16D155FF00768A1D /* 07_NotepadTemplate.pdf in Resources */,
 				4CD78ABD16D155FF00768A1D /* 08_SocketTemplate.pdf in Resources */,
 				4CD78ABE16D155FF00768A1D /* 09_IdentityTemplate.pdf in Resources */,
-				B625056E191FD6C900E7A71F /* MainMenu.xib in Resources */,
 				B6250586191FD6C900E7A71F /* About.txt in Resources */,
 				4CD78ABF16D155FF00768A1D /* 10_ContactTemplate.pdf in Resources */,
 				4CD78AC016D155FF00768A1D /* 11_CameraTemplate.pdf in Resources */,
-				B625056F191FD6C900E7A71F /* Credits.rtf in Resources */,
 				4C61EA0516D2FFE200AC519E /* OutlineView.xib in Resources */,
 				4CB9339916D3A0DD00A13B5D /* Credits.rtf in Resources */,
 				4C3FFD9E16DAF60600DF9186 /* ContextBar.xib in Resources */,
@@ -2514,13 +2466,10 @@
 				B62505B9191FD6C900E7A71F /* LICENSE.txt in Resources */,
 				4C2C8B341787500E009649F3 /* UnprotectedWarningView.xib in Resources */,
 				4CF29BF417879D0000851B60 /* 26_FileSaveTemplate.pdf in Resources */,
-				B62505B6191FD6C900E7A71F /* InfoPlist.strings in Resources */,
 				4C52A88E1788628B00868229 /* 06_BlockDeviceTemplate.pdf in Resources */,
-				B62505B8191FD6C900E7A71F /* keepasshttp-objcTests-Info.plist in Resources */,
 				4C52A88F1788628B00868229 /* 13_KeysTemplate.pdf in Resources */,
 				4C52A8901788628B00868229 /* 18_DisplayTemplate.pdf in Resources */,
 				4C52A892178863B000868229 /* 68_PhoneTemplate.pdf in Resources */,
-				B6250570191FD6C900E7A71F /* InfoPlist.strings in Resources */,
 				4C96D15417A12E4F00D931FA /* 99_CreatedTemplate.pdf in Resources */,
 				6021FE7718E15FF300C3BC51 /* DatePickingView.xib in Resources */,
 				6021FE4B18E13F1D00C3BC51 /* GroupInspectorView.xib in Resources */,
@@ -2530,7 +2479,6 @@
 				4C0728BF17B68ED0005A7DD9 /* SavePanelAccessoryView.xib in Resources */,
 				4CE88B9717BA651C0042E078 /* contextTriangleTemplate.pdf in Resources */,
 				4C7ABA4817BAEC6700FF5799 /* 15_ScannerTemplate.pdf in Resources */,
-				B6250571191FD6C900E7A71F /* Images.xcassets in Resources */,
 				4C7ABA4917BAEC6700FF5799 /* 16_BrowserTemplate.pdf in Resources */,
 				4C7ABA4A17BAEC6700FF5799 /* 17_CDRomTemplate.pdf in Resources */,
 				4C7ABA4B17BAEC6700FF5799 /* 19_EmailTemplate.pdf in Resources */,
@@ -2616,7 +2564,6 @@
 				4C3BD51516D276F800389F1F /* MPToolbarDelegate.m in Sources */,
 				4C61EA0316D2FD0800AC519E /* MPOutlineViewController.m in Sources */,
 				B62505A6191FD6C900E7A71F /* KPHCore.m in Sources */,
-				B62505B5191FD6C900E7A71F /* ChromeTests.m in Sources */,
 				4C69A73A16D589DF00EC1B1A /* HNHGradientView.m in Sources */,
 				4C65C79C16DD283900E32CFF /* MPToolbarButton.m in Sources */,
 				B62505AE191FD6C900E7A71F /* KPHConfigOpt.m in Sources */,
@@ -2652,7 +2599,6 @@
 				B6250589191FD6C900E7A71F /* DDFileLogger.m in Sources */,
 				4C01C2421764D8980016D5D0 /* MPContextMenuHelper.m in Sources */,
 				4CE296191842A166005F01CE /* MPAutotypePaste.m in Sources */,
-				B62505B7191FD6C900E7A71F /* FirefoxTests.m in Sources */,
 				4C01C245176500C40016D5D0 /* HNHLevelIndicatorCell.m in Sources */,
 				4C569D9E17652B0600595B62 /* MPConstants.m in Sources */,
 				4C569DA117652BFE00595B62 /* MPEntryTableDataSource.m in Sources */,
@@ -2694,7 +2640,6 @@
 				4C52A244177D7B9F0000D88F /* HNHScrollView.m in Sources */,
 				4CC7EA1B17807E7E0089D4F3 /* HNHRoundedTextFieldCellHelper.m in Sources */,
 				B625059F191FD6C900E7A71F /* KPHGetLoginsCountHandler.m in Sources */,
-				B6250594191FD6C900E7A71F /* main.m in Sources */,
 				4C5FE9AE17843CE20001D5A8 /* MPSelectedAttachmentTableCellView.m in Sources */,
 				4C3666411787327E00B249F1 /* MPDocument+Attachments.m in Sources */,
 				B6250590191FD6C900E7A71F /* NSString+Hashes.m in Sources */,
@@ -2815,7 +2760,6 @@
 				4C5CD36217D15DCA000B7F38 /* KPKRandomStream.m in Sources */,
 				B625059D191FD6C900E7A71F /* KPHGeneratePasswordHandler.m in Sources */,
 				4C5CD36317D15DCA000B7F38 /* KPKSalsa20RandomStream.m in Sources */,
-				B6250573191FD6C900E7A71F /* KPHAppDelegate.m in Sources */,
 				B625057E191FD6C900E7A71F /* HTTPAsyncFileResponse.m in Sources */,
 				B6250580191FD6C900E7A71F /* HTTPDynamicFileResponse.m in Sources */,
 				4C3C4EA518D6FEA100153127 /* TTTImageTransformers.m in Sources */,
@@ -3043,38 +2987,6 @@
 			name = DatabaseSettingsWindow.xib;
 			sourceTree = "<group>";
 		};
-		B62503FC191FD6C800E7A71F /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B62503FD191FD6C800E7A71F /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		B62503FE191FD6C800E7A71F /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B62503FF191FD6C800E7A71F /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		B6250400191FD6C800E7A71F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6250401191FD6C800E7A71F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B62504A4191FD6C800E7A71F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B62504A5191FD6C800E7A71F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -3198,9 +3110,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacPass/MacPass-Prefix.pch";
 				INFOPLIST_FILE = "MacPass/MacPass-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3214,9 +3127,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacPass/MacPass-Prefix.pch";
 				INFOPLIST_FILE = "MacPass/MacPass-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

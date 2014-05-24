@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "KPHKeePassClient.h"
+#import "MPKeePassHttpModelAdapter.h"
 #import "MPSettingsHelper.h"
+#import "MPDocument.h"
 
 @interface MPKeePassHttpClient : NSObject<KPHKeePassClient>
+
+@property (nonatomic) MPDocument* document;
 
 @end

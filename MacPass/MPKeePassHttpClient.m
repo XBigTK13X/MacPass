@@ -13,7 +13,7 @@
 {
     self = [super init];
     if(self){
-        
+        self.document = [MPDocument new];
     }
     return self;
 }
@@ -24,21 +24,23 @@
 }
 
 - (KPHPwGroup *) rootGroup
-{
-    return nil;
+{    
+    return [MPKeePassHttpModelAdapter groupToPwGroup:self.document.root];
 }
 - (KPHPwGroup *) recycleGroup
 {
-    return nil;
+    return [MPKeePassHttpModelAdapter groupToPwGroup:self.document.trash];
 }
 - (void) saveEntry:(KPHPwEntry*)entry
 {
-    
+    KPKEntry* kpkEntry = [MPKeePassHttpModelAdapter pwEntryToEntry:entry];
+    //TODO Persist changes
 }
 
 - (int) countMatchingEntries:(NSString*) url submitHost:(NSString*)submitHost realm:(NSString*)realm
 {
-    return 0;
+    self.document.root
+    return [self.document ];
 }
 //Array of KPHPwEntry
 - (NSMutableArray*) findMatchingEntries:(NSString*) host submithost:(NSString*)submithost

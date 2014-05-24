@@ -346,6 +346,7 @@
 		B62505B9191FD6C900E7A71F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B62504A8191FD6C800E7A71F /* LICENSE.txt */; };
 		B62505BA191FD6C900E7A71F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B62504A9191FD6C800E7A71F /* README.md */; };
 		B62505CA191FE00A00E7A71F /* MPKeePassHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B62505C9191FE00A00E7A71F /* MPKeePassHttpClient.m */; };
+		B63827CA1930CFA400897296 /* MPKeePassHttpModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B63827C91930CFA400897296 /* MPKeePassHttpModelAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1066,6 +1067,8 @@
 		B62504A9191FD6C800E7A71F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		B62505C8191FE00A00E7A71F /* MPKeePassHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeePassHttpClient.h; sourceTree = "<group>"; };
 		B62505C9191FE00A00E7A71F /* MPKeePassHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeePassHttpClient.m; sourceTree = "<group>"; };
+		B63827C81930CFA400897296 /* MPKeePassHttpModelAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeePassHttpModelAdapter.h; sourceTree = "<group>"; };
+		B63827C91930CFA400897296 /* MPKeePassHttpModelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeePassHttpModelAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1221,6 +1224,8 @@
 				4CF7805C176E71170032EE71 /* MPServerDaemon.m */,
 				B62505C8191FE00A00E7A71F /* MPKeePassHttpClient.h */,
 				B62505C9191FE00A00E7A71F /* MPKeePassHttpClient.m */,
+				B63827C81930CFA400897296 /* MPKeePassHttpModelAdapter.h */,
+				B63827C91930CFA400897296 /* MPKeePassHttpModelAdapter.m */,
 			);
 			name = KeepassHttp;
 			sourceTree = "<group>";
@@ -2540,6 +2545,7 @@
 				4C2E382316D1421B00037A9D /* MPIconHelper.m in Sources */,
 				4C2E382616D1470200037A9D /* MPViewController.m in Sources */,
 				4C65FAE916D16DDB006E0577 /* MPPasswordInputController.m in Sources */,
+				B63827CA1930CFA400897296 /* MPKeePassHttpModelAdapter.m in Sources */,
 				4CDF01A316D1B76700D0AC08 /* MPEntryViewController.m in Sources */,
 				4C3BD51516D276F800389F1F /* MPToolbarDelegate.m in Sources */,
 				4C61EA0316D2FD0800AC519E /* MPOutlineViewController.m in Sources */,

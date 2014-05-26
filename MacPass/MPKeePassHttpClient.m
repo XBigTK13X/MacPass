@@ -7,13 +7,14 @@
 //
 
 #import "MPKeePassHttpClient.h"
+#import "KPHUtil.h"
 
 @implementation MPKeePassHttpClient
 - (id) init
 {
     self = [super init];
     if(self){
-        self.document = [MPDocument new];
+        self.document = [[NSDocumentController sharedDocumentController] currentDocument];
     }
     return self;
 }
@@ -31,10 +32,22 @@
 {
     return [MPKeePassHttpModelAdapter groupToPwGroup:self.document.trash];
 }
-- (void) saveEntry:(KPHPwEntry*)entry
+- (void) createOrUpdateEntry:(KPHPwEntry *)entry
 {
-    KPKEntry* kpkEntry = [MPKeePassHttpModelAdapter pwEntryToEntry:entry];
+    KPKEntry* oldEntry = [self.document findEntry:entry.Uuid];
+    oldEntry.username = entry.Strings[[KPHUtil globalVars].PwDefs.UserNameField];
+    [self.document saveDocument:self];
     //TODO Persist changes
+}
+
+- (void) createOrUpdateGroup:(KPHPwGroup *)group
+{
+    
+}
+
+- (KPHPwGroup *)findGroup:(NSString *)name
+{
+    return nil;
 }
 
 - (int) countMatchingEntries:(NSString*) url submitHost:(NSString*)submitHost realm:(NSString*)realm
@@ -61,26 +74,29 @@
 
 - (BOOL) promptUserForOverwrite: (NSString*)message title:(NSString*)title
 {
-    return false;
+    return true;
 }
 //Return nil if user declines
 - (NSString*) promptUserForKeyName: (NSString*)keyMessage
 {
-    return nil;
+    return [NSString stringWithFormat:@"MacPass - %@",[[NSUUID UUID] UUIDString]];
 }
 - (KPHGetLoginsUserResponse*) promptUserForAccess:(NSString*) message title:(NSString*)title host:(NSString*)host submithost:(NSString*)submithost entries:(NSArray*)entries
 {
-    return nil;
+    KPHGetLoginsUserResponse* response = [KPHGetLoginsUserResponse new];
+    response.Accept = true;
+    response.Remember = false;
+    return response;
 }
 - (BOOL) promptUserForEntryUpdate:(NSString*)message title:(NSString*)title
 {
-    return false;
+    return true;
 }
 - (void) showNotification:(NSString*)message
 {
-    
+    NSLog(@"KPH Notification - %@",message);
 }
-- (void) updateUI
+- (void) refreshUI
 {
     
 }

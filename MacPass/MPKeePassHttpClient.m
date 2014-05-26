@@ -39,8 +39,7 @@
 
 - (int) countMatchingEntries:(NSString*) url submitHost:(NSString*)submitHost realm:(NSString*)realm
 {
-    self.document.root
-    return [self.document ];
+    return 0;
 }
 //Array of KPHPwEntry
 - (NSMutableArray*) findMatchingEntries:(NSString*) host submithost:(NSString*)submithost

@@ -185,6 +185,8 @@
 		4C8A173D1790AA41008B5C17 /* NSData+Keyfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A173C1790AA41008B5C17 /* NSData+Keyfile.m */; };
 		4C8B36AB17A6ED4B005E1FF1 /* MPOutlineContextMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B36AA17A6ED4B005E1FF1 /* MPOutlineContextMenuDelegate.m */; };
 		4C8EB8C118D399FD00438B08 /* KPKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EB8C018D399FD00438B08 /* KPKTag.m */; };
+		4C94A06F1938DC8C0040ABAB /* MPEditSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C94A06E1938DC8C0040ABAB /* MPEditSession.m */; };
+		4C94A0721938DDC20040ABAB /* MPDocument+EditingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C94A0711938DDC20040ABAB /* MPDocument+EditingSession.m */; };
 		4C96D15417A12E4F00D931FA /* 99_CreatedTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4C96D15317A12E4F00D931FA /* 99_CreatedTemplate.pdf */; };
 		4C9D6AA917615199001C660C /* HNHRoundedSecureTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D6AA817615199001C660C /* HNHRoundedSecureTextFieldCell.m */; };
 		4CA08DA017A831B200A6544B /* MPAddEntryContextMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA08D9F17A831B200A6544B /* MPAddEntryContextMenuDelegate.m */; };
@@ -473,6 +475,8 @@
 		4C1E9884185F71A800943563 /* MPContextBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPContextBarViewController.m; sourceTree = "<group>"; };
 		4C1FA07918231900003A3F8C /* MPDocument+Autotype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPDocument+Autotype.h"; sourceTree = "<group>"; };
 		4C1FA07A18231900003A3F8C /* MPDocument+Autotype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPDocument+Autotype.m"; sourceTree = "<group>"; };
+		4C21F29D195B39B9002D610D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		4C21F29F195B3A48002D610D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		4C224B4017DFCB2300FF6AEE /* MPNumericalInputFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNumericalInputFormatter.h; sourceTree = "<group>"; };
 		4C224B4117DFCB2400FF6AEE /* MPNumericalInputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNumericalInputFormatter.m; sourceTree = "<group>"; };
 		4C25D58616CF0FAA00F6806C /* EntryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryView.xib; sourceTree = "<group>"; };
@@ -723,6 +727,9 @@
 		4C8B36AA17A6ED4B005E1FF1 /* MPOutlineContextMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOutlineContextMenuDelegate.m; sourceTree = "<group>"; };
 		4C8EB8BF18D399FD00438B08 /* KPKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKTag.h; sourceTree = "<group>"; };
 		4C8EB8C018D399FD00438B08 /* KPKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKTag.m; sourceTree = "<group>"; };
+		4C94A06D1938DC8C0040ABAB /* MPEditSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEditSession.h; sourceTree = "<group>"; };
+		4C94A06E1938DC8C0040ABAB /* MPEditSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEditSession.m; sourceTree = "<group>"; };
+		4C94A0711938DDC20040ABAB /* MPDocument+EditingSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPDocument+EditingSession.m"; sourceTree = "<group>"; };
 		4C96D15317A12E4F00D931FA /* 99_CreatedTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = 99_CreatedTemplate.pdf; path = Icons/99_CreatedTemplate.pdf; sourceTree = "<group>"; };
 		4C9D6AA717615199001C660C /* HNHRoundedSecureTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHRoundedSecureTextFieldCell.h; sourceTree = "<group>"; };
 		4C9D6AA817615199001C660C /* HNHRoundedSecureTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNHRoundedSecureTextFieldCell.m; sourceTree = "<group>"; };
@@ -741,7 +748,6 @@
 		4CA3530918A53CB800839B0F /* MPKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeyMapper.h; sourceTree = "<group>"; };
 		4CA3530A18A53CB800839B0F /* MPKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeyMapper.m; sourceTree = "<group>"; };
 		4CA3531118A5577300839B0F /* dsa_sparkle_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_sparkle_pub.pem; sourceTree = "<group>"; };
-		4CAAFDD51787AED60013FCF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		4CAC614217AD319200023F9E /* KPKTestXmlParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKTestXmlParsing.m; sourceTree = "<group>"; };
 		4CAD745615B887FD00104512 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		4CAD745715B887FD00104512 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
@@ -788,6 +794,7 @@
 		4CCEDE2F179F550D008402BE /* KPKTreeReading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPKTreeReading.h; sourceTree = "<group>"; };
 		4CCEDE30179F5B6C008402BE /* KPKDataStreamReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKDataStreamReader.h; sourceTree = "<group>"; };
 		4CCEDE31179F5B6C008402BE /* KPKDataStreamReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKDataStreamReader.m; sourceTree = "<group>"; };
+		4CD106211935E5A1006A3A58 /* KPKModificationRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKModificationRecording.h; sourceTree = "<group>"; };
 		4CD25F9218B17A17006098E9 /* KPKTestUUIDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKTestUUIDAdditions.m; sourceTree = "<group>"; };
 		4CD2B9041849424B0051B395 /* MPAutotypeContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAutotypeContext.h; sourceTree = "<group>"; };
 		4CD2B9051849424B0051B395 /* MPAutotypeContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAutotypeContext.m; sourceTree = "<group>"; };
@@ -832,6 +839,7 @@
 		4CE39AC316ECE4F7000FE29D /* MPPopupImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPopupImageView.m; sourceTree = "<group>"; };
 		4CE3E62417AB0D2D00D9E4B4 /* MPAttachmentTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAttachmentTableDataSource.h; sourceTree = "<group>"; };
 		4CE3E62517AB0D2D00D9E4B4 /* MPAttachmentTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAttachmentTableDataSource.m; sourceTree = "<group>"; };
+		4CE5299F194847150078C2FF /* MPDocument+EditingSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPDocument+EditingSession.h"; sourceTree = "<group>"; };
 		4CE5B548173AFBA700207B39 /* MPDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDocument.h; sourceTree = "<group>"; };
 		4CE5B549173AFBA700207B39 /* MPDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDocument.m; sourceTree = "<group>"; };
 		4CE76DAC17B3AD010043B82B /* KPKHashedDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKHashedDataTest.m; sourceTree = "<group>"; };
@@ -872,7 +880,6 @@
 		4CFC873A179DEDF3000DFC03 /* KPKMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKMetaData.m; sourceTree = "<group>"; };
 		4CFC873C179DF200000DFC03 /* KPKTimeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKTimeInfo.h; sourceTree = "<group>"; };
 		4CFC873D179DF200000DFC03 /* KPKTimeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKTimeInfo.m; sourceTree = "<group>"; };
-		4CFC873F179DF295000DFC03 /* KPKModificationRecording.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPKModificationRecording.h; sourceTree = "<group>"; };
 		4CFC8742179DFD3E000DFC03 /* KPKTestXmlLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKTestXmlLoading.m; sourceTree = "<group>"; };
 		4CFDDDE7185E92A600A9E7F1 /* HNHTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHTextView.h; sourceTree = "<group>"; };
 		4CFDDDE8185E92A600A9E7F1 /* HNHTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNHTextView.m; sourceTree = "<group>"; };
@@ -1069,6 +1076,25 @@
 		B62505C9191FE00A00E7A71F /* MPKeePassHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeePassHttpClient.m; sourceTree = "<group>"; };
 		B63827C81930CFA400897296 /* MPKeePassHttpModelAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeePassHttpModelAdapter.h; sourceTree = "<group>"; };
 		B63827C91930CFA400897296 /* MPKeePassHttpModelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeePassHttpModelAdapter.m; sourceTree = "<group>"; };
+		BD6C365619484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/DatabaseSettingsWindow.strings; sourceTree = "<group>"; };
+		BD6C365719484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/PasswordEditWindow.strings; sourceTree = "<group>"; };
+		BD6C365819484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/GeneralSettings.strings; sourceTree = "<group>"; };
+		BD6C365919484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/IntegrationSettings.strings; sourceTree = "<group>"; };
+		BD6C365A19484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/WorkflowSettings.strings; sourceTree = "<group>"; };
+		BD6C365B19484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/UpdateSettings.strings; sourceTree = "<group>"; };
+		BD6C365C19484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		BD6C365D19484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/PasswordInputView.strings; sourceTree = "<group>"; };
+		BD6C365E19484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/PasswordCreatorView.strings; sourceTree = "<group>"; };
+		BD6C365F19484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InspectorView.strings; sourceTree = "<group>"; };
+		BD6C366019484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/GroupInspectorView.strings; sourceTree = "<group>"; };
+		BD6C366119484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/EntryInspectorView.strings; sourceTree = "<group>"; };
+		BD6C366219484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/DatePickingView.strings; sourceTree = "<group>"; };
+		BD6C366319484CF40089EB37 /* nl */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BD6C366419484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = nl; path = nl.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BD6C366519484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD6C366619484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/KPKLocalizeable.strings; sourceTree = "<group>"; };
+		BD6C366719484CF40089EB37 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1317,6 +1343,10 @@
 				4C15B74518BCA3B1003F8008 /* MPDocument+Search.m */,
 				4C6B7C7B18BE7EB0001D5D77 /* MPDocument+HistoryBrowsing.h */,
 				4C6B7C7C18BE7EB0001D5D77 /* MPDocument+HistoryBrowsing.m */,
+				4CE5299F194847150078C2FF /* MPDocument+EditingSession.h */,
+				4C94A0711938DDC20040ABAB /* MPDocument+EditingSession.m */,
+				4C94A06D1938DC8C0040ABAB /* MPEditSession.h */,
+				4C94A06E1938DC8C0040ABAB /* MPEditSession.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1717,6 +1747,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4CD106201935E5A1006A3A58 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4CD106211935E5A1006A3A58 /* KPKModificationRecording.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		4CD3ABAD178F71B50073F5C5 /* KeePassKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1726,6 +1764,7 @@
 				4CD3ABAF178F71B50073F5C5 /* Categories */,
 				4CD3ABB1178F71B50073F5C5 /* Core */,
 				4CD3ABB5178F71B50073F5C5 /* IO */,
+				4CD106201935E5A1006A3A58 /* Protocols */,
 			);
 			path = KeePassKit;
 			sourceTree = "<group>";
@@ -1790,7 +1829,6 @@
 				4CFC873A179DEDF3000DFC03 /* KPKMetaData.m */,
 				4CFC873C179DF200000DFC03 /* KPKTimeInfo.h */,
 				4CFC873D179DF200000DFC03 /* KPKTimeInfo.m */,
-				4CFC873F179DF295000DFC03 /* KPKModificationRecording.h */,
 				4C68456817BC21DD00FCDBFC /* KPKAutotype.h */,
 				4C68456917BC21DD00FCDBFC /* KPKAutotype.m */,
 				4C68456B17BC227B00FCDBFC /* KPKWindowAssociation.h */,
@@ -2322,6 +2360,7 @@
 				Base,
 				fr,
 				"zh-Hans",
+				nl,
 			);
 			mainGroup = 4C77E35715B84A240093A587;
 			productRefGroup = 4C77E36315B84A240093A587 /* Products */;
@@ -2559,6 +2598,7 @@
 				4C77547516E55FE800970E02 /* MPInspectorViewController.m in Sources */,
 				4C89F524182FB4740069C73C /* MPAutotypeCommand.m in Sources */,
 				4C8EB8C118D399FD00438B08 /* KPKTag.m in Sources */,
+				4C94A06F1938DC8C0040ABAB /* MPEditSession.m in Sources */,
 				4CFC53BF16E94729007396BE /* MPShadowBox.m in Sources */,
 				4C888C9316EB6F5E003D34A1 /* MPToolbarItem.m in Sources */,
 				B6250596191FD6C900E7A71F /* KPHDialogueEngine.m in Sources */,
@@ -2597,6 +2637,10 @@
 				4CA2335A176DBFE100F0B6AC /* MPLockDaemon.m in Sources */,
 				B625059B191FD6C900E7A71F /* KPHProtocol.m in Sources */,
 				4C80BB6F176DE06F00E5E248 /* HNHScrollDocumentViewAdapter.m in Sources */,
+				4C245B76176E1E3D0086100E /* DDData.m in Sources */,
+				4C245B77176E1E3D0086100E /* DDNumber.m in Sources */,
+				4C245B78176E1E3D0086100E /* DDRange.m in Sources */,
+				4C94A0721938DDC20040ABAB /* MPDocument+EditingSession.m in Sources */,
 				4C77C84118E240E000D1C42B /* DDHotKey+Keydata.m in Sources */,
 				4C3C4EA618D6FEA100153127 /* TTTJSONTransformer.m in Sources */,
 				4C88C66918D9F8D600F43852 /* MPTemporaryFileStorageCenter.m in Sources */,
@@ -2766,6 +2810,7 @@
 				4C45FB22178E09ED0010007D /* en */,
 				4C5CD34417D158DE000B7F38 /* fr */,
 				601F811C18E016340028F3DE /* zh-Hans */,
+				BD6C366719484CF40089EB37 /* nl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2777,6 +2822,7 @@
 				4C53A7A91864C3A2000DFF0D /* en */,
 				4C53A7AA1864C3A2000DFF0D /* fr */,
 				601F811B18E016340028F3DE /* zh-Hans */,
+				BD6C366619484CF40089EB37 /* nl */,
 			);
 			name = KPKLocalizeable.strings;
 			sourceTree = "<group>";
@@ -2789,6 +2835,7 @@
 				4CCA7EEE1797867200B0B55E /* en */,
 				4C5CD34517D158F5000B7F38 /* fr */,
 				601F811118E016340028F3DE /* zh-Hans */,
+				BD6C365819484CF40089EB37 /* nl */,
 			);
 			name = GeneralSettings.xib;
 			sourceTree = "<group>";
@@ -2801,6 +2848,7 @@
 				4C7615751764C4A40015A1A6 /* de */,
 				4C5CD34717D1591A000B7F38 /* fr */,
 				601F811318E016340028F3DE /* zh-Hans */,
+				BD6C365D19484CF40089EB37 /* nl */,
 			);
 			name = PasswordInputView.xib;
 			sourceTree = "<group>";
@@ -2813,6 +2861,7 @@
 				4C5ADC3017830B09004E1E8D /* de */,
 				4C5CD34817D15920000B7F38 /* fr */,
 				601F811418E016340028F3DE /* zh-Hans */,
+				BD6C365F19484CF40089EB37 /* nl */,
 			);
 			name = InspectorView.xib;
 			sourceTree = "<group>";
@@ -2824,6 +2873,7 @@
 				4C7615791764C4A50015A1A6 /* de */,
 				4C5CD34217D158DE000B7F38 /* fr */,
 				601F811A18E016340028F3DE /* zh-Hans */,
+				BD6C366519484CF40089EB37 /* nl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2832,9 +2882,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C7615601764C05A0015A1A6 /* Base */,
-				4CAAFDD51787AED60013FCF9 /* en */,
 				4C5CD34617D15912000B7F38 /* fr */,
 				601F811218E016340028F3DE /* zh-Hans */,
+				BD6C365C19484CF40089EB37 /* nl */,
+				4C21F29D195B39B9002D610D /* en */,
+				4C21F29F195B3A48002D610D /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -2846,6 +2898,7 @@
 				4C7615771764C4A40015A1A6 /* de */,
 				4C5CD34017D158DE000B7F38 /* fr */,
 				601F811818E016340028F3DE /* zh-Hans */,
+				BD6C366319484CF40089EB37 /* nl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2857,6 +2910,7 @@
 				4C7615781764C4A50015A1A6 /* de */,
 				4C5CD34117D158DE000B7F38 /* fr */,
 				601F811918E016340028F3DE /* zh-Hans */,
+				BD6C366419484CF40089EB37 /* nl */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -2869,6 +2923,7 @@
 				6021FE4618E1344A00C3BC51 /* en */,
 				6021FE4818E1356800C3BC51 /* de */,
 				6021FE4A18E1356B00C3BC51 /* fr */,
+				BD6C366119484CF40089EB37 /* nl */,
 			);
 			name = EntryInspectorView.xib;
 			sourceTree = "<group>";
@@ -2881,6 +2936,7 @@
 				6021FE5118E13F2700C3BC51 /* de */,
 				6021FE5318E13F2900C3BC51 /* fr */,
 				6021FE5518E13F2A00C3BC51 /* zh-Hans */,
+				BD6C366019484CF40089EB37 /* nl */,
 			);
 			name = GroupInspectorView.xib;
 			sourceTree = "<group>";
@@ -2893,6 +2949,7 @@
 				6021FE5C18E142A200C3BC51 /* de */,
 				6021FE5E18E142A300C3BC51 /* fr */,
 				6021FE6018E142A400C3BC51 /* zh-Hans */,
+				BD6C365919484CF40089EB37 /* nl */,
 			);
 			name = IntegrationSettings.xib;
 			sourceTree = "<group>";
@@ -2905,6 +2962,7 @@
 				6021FE6718E15D9A00C3BC51 /* de */,
 				6021FE6918E15D9B00C3BC51 /* fr */,
 				6021FE6B18E15D9D00C3BC51 /* zh-Hans */,
+				BD6C365A19484CF40089EB37 /* nl */,
 			);
 			name = WorkflowSettings.xib;
 			sourceTree = "<group>";
@@ -2917,6 +2975,7 @@
 				6021FE7218E15E7700C3BC51 /* de */,
 				6021FE7418E15E7900C3BC51 /* fr */,
 				6021FE7618E15E7B00C3BC51 /* zh-Hans */,
+				BD6C365B19484CF40089EB37 /* nl */,
 			);
 			name = UpdateSettings.xib;
 			sourceTree = "<group>";
@@ -2929,6 +2988,7 @@
 				6021FE7D18E15FFF00C3BC51 /* de */,
 				6021FE7F18E1600000C3BC51 /* fr */,
 				6021FE8118E1600200C3BC51 /* zh-Hans */,
+				BD6C366219484CF40089EB37 /* nl */,
 			);
 			name = DatePickingView.xib;
 			sourceTree = "<group>";
@@ -2941,6 +3001,7 @@
 				6021FE8818E160C800C3BC51 /* de */,
 				6021FE8A18E160C900C3BC51 /* fr */,
 				6021FE8C18E160CB00C3BC51 /* zh-Hans */,
+				BD6C365719484CF40089EB37 /* nl */,
 			);
 			name = PasswordEditWindow.xib;
 			sourceTree = "<group>";
@@ -2953,6 +3014,7 @@
 				6021FE9318E1617C00C3BC51 /* de */,
 				6021FE9518E1617D00C3BC51 /* fr */,
 				6021FE9718E1617E00C3BC51 /* zh-Hans */,
+				BD6C365E19484CF40089EB37 /* nl */,
 			);
 			name = PasswordCreatorView.xib;
 			sourceTree = "<group>";
@@ -2965,6 +3027,7 @@
 				6021FE9E18E1651C00C3BC51 /* de */,
 				6021FEA018E1651E00C3BC51 /* fr */,
 				6021FEA218E1652000C3BC51 /* zh-Hans */,
+				BD6C365619484CF40089EB37 /* nl */,
 			);
 			name = DatabaseSettingsWindow.xib;
 			sourceTree = "<group>";

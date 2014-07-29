@@ -39,6 +39,8 @@
 
 #import "MPNotifications.h"
 
+#import "NSString+Commands.h"
+
 #define STATUS_BAR_ANIMATION_TIME 0.15
 
 typedef NS_ENUM(NSUInteger,MPOVerlayInfoType) {
@@ -64,6 +66,7 @@ NSString *const _MPTAbleSecurCellView = @"PasswordCell";
 @interface MPEntryViewController () {
   MPEntryContextMenuDelegate *_menuDelegate;
   BOOL _isDisplayingContextBar;
+  BOOL _showFooterInfo;
 }
 
 @property (strong) NSArrayController *entryArrayController;
@@ -78,6 +81,8 @@ NSString *const _MPTAbleSecurCellView = @"PasswordCell";
 
 @property (weak) IBOutlet HNHGradientView *bottomBar;
 @property (weak) IBOutlet NSButton *addEntryButton;
+
+@property (weak) IBOutlet NSTextField *footerInfoText;
 
 @property (nonatomic, strong) MPEntryTableDataSource *dataSource;
 
@@ -186,6 +191,9 @@ NSString *const _MPTAbleSecurCellView = @"PasswordCell";
   
   [self _setupHeaderMenu];
   [parentColumn setHidden:YES];
+  
+  [self.footerInfoText setHidden:!_showFooterInfo];
+  [self.footerInfoText setStringValue:NSLocalizedString(@"DOCUMENT_AUTOTYPE_CORRUPTION_WARNING", "")];
 }
 
 - (NSResponder *)reconmendedFirstResponder {
@@ -215,6 +223,22 @@ NSString *const _MPTAbleSecurCellView = @"PasswordCell";
   
   
   [self.contextBarViewController registerNotificationsForDocument:document];
+  
+  /* Setup warning message at the bottom*/
+  NSArray *array = [[NSUserDefaults standardUserDefaults] arrayForKey:kMPSettingsKeyDocumentsAutotypeFixNoteWasShown];
+  NSString *path = [[document fileURL] path];
+  if(!path) {
+    return; // No path, nothing to do
+  }
+  if(![array containsObject:path]) {
+    array = array ? [array arrayByAddingObject:path] : @[path];
+    [[NSUserDefaults standardUserDefaults] setObject:array forKey:kMPSettingsKeyDocumentsAutotypeFixNoteWasShown];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    _showFooterInfo = YES;
+  }
+  else {
+    _showFooterInfo = NO;
+  }
 }
 
 #pragma mark NSTableViewDelgate
@@ -554,14 +578,14 @@ NSString *const _MPTAbleSecurCellView = @"PasswordCell";
 - (void)copyPassword:(id)sender {
   KPKEntry *selectedEntry = [self _clickedOrSelectedEntry];
   if(selectedEntry) {
-    [self _copyToPasteboard:selectedEntry.password overlayInfo:MPOverlayInfoPassword name:nil];
+    [self _copyToPasteboard:[selectedEntry.password finalValueForEntry:selectedEntry] overlayInfo:MPOverlayInfoPassword name:nil];
   }
 }
 
 - (void)copyUsername:(id)sender {
   KPKEntry *selectedEntry = [self _clickedOrSelectedEntry];
   if(selectedEntry) {
-    [self _copyToPasteboard:selectedEntry.username overlayInfo:MPOverlayInfoUsername name:nil];
+    [self _copyToPasteboard:[selectedEntry.username finalValueForEntry:selectedEntry] overlayInfo:MPOverlayInfoUsername name:nil];
   }
 }
 
@@ -571,14 +595,14 @@ NSString *const _MPTAbleSecurCellView = @"PasswordCell";
     NSUInteger index = [sender tag];
     NSAssert((index >= 0)  && (index < [selectedEntry.customAttributes count]), @"Index for custom field needs to be valid");
     KPKAttribute *attribute = selectedEntry.customAttributes[index];
-    [self _copyToPasteboard:attribute.value overlayInfo:MPOverlayInfoCustom name:attribute.key];
+    [self _copyToPasteboard:attribute.evaluatedValue overlayInfo:MPOverlayInfoCustom name:attribute.key];
   }
 }
 
 - (void)copyURL:(id)sender {
   KPKEntry *selectedEntry = [self _clickedOrSelectedEntry];
   if(selectedEntry) {
-    [self _copyToPasteboard:selectedEntry.url overlayInfo:MPOverlayInfoURL name:nil];
+    [self _copyToPasteboard:[selectedEntry.url finalValueForEntry:selectedEntry] overlayInfo:MPOverlayInfoURL name:nil];
   }
 }
 

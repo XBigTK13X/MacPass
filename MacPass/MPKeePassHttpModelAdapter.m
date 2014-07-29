@@ -23,6 +23,8 @@
 }
 + (KPHPwGroup*) groupToPwGroup:(KPKGroup*)group
 {
+    KPHPwGroup* result = [KPHPwGroup new];
+    
     return nil;
 }
 @end

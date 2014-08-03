@@ -28,10 +28,12 @@
 {    
     return [MPKeePassHttpModelAdapter groupToPwGroup:self.document.root];
 }
+
 - (KPHPwGroup *) recycleGroup
 {
     return [MPKeePassHttpModelAdapter groupToPwGroup:self.document.trash];
 }
+
 - (void) createOrUpdateEntry:(KPHPwEntry *)entry
 {
     KPKEntry* oldEntry = [self.document findEntry:entry.Uuid];

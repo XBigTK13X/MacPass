@@ -19,12 +19,23 @@
 }
 + (KPHPwEntry*) entryToPwEntry:(KPKEntry*)entry
 {
-    return nil;
+    KPHPwEntry* result = [KPHPwEntry new];
+    result.Strings[@"UserName"] = entry.username;
+    result.Strings[@"Password"] = entry.password;
+    result.Strings[@"URL"] = entry.url;
+    result.Strings[@"Title"] = entry.title;
+    return result;
 }
 + (KPHPwGroup*) groupToPwGroup:(KPKGroup*)group
 {
     KPHPwGroup* result = [KPHPwGroup new];
-    
-    return nil;
+    for(KPKEntry* childEntry in group.entries)
+    {
+        [result addEntry:[MPKeePassHttpModelAdapter entryToPwEntry:childEntry] takeOwnership:FALSE];
+    }
+    for(KPKGroup* childGroup in group.groups){
+        [result.Children addObject:[MPKeePassHttpModelAdapter groupToPwGroup:childGroup]];
+    }
+    return result;
 }
 @end

@@ -36,15 +36,13 @@
 
 - (void) createOrUpdateEntry:(KPHPwEntry *)entry
 {
-    KPKEntry* oldEntry = [self.document findEntry:entry.Uuid];
-    oldEntry.username = entry.Strings[[KPHUtil globalVars].PwDefs.UserNameField];
+    [MPKeePassHttpModelAdapter savePwEntry:entry document:self.document];
     [self.document saveDocument:self];
-    //TODO Persist changes
 }
 
 - (void) createOrUpdateGroup:(KPHPwGroup *)group
 {
-    
+    [MPKeePassHttpModelAdapter savePwGroup:group document:self.document];
 }
 
 - (KPHPwGroup *)findGroup:(NSString *)name

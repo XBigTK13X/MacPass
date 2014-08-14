@@ -11,10 +11,13 @@
 #import "KPHPwGroup.h"
 #import "KPKEntry.h"
 #import "KPHPwEntry.h"
+#import "MPDocument.h"
+#import "KPHKeePassClient.h"
+#import "KPHUtil.h"
 
 @interface MPKeePassHttpModelAdapter : NSObject
-+ (KPKEntry*) pwEntryToEntry:(KPHPwEntry*)pwEntry;
-+ (KPKGroup*) pwGroupToGroup:(KPHPwGroup*)pwGroup;
++ (void) savePwEntry:(KPHPwEntry*)pwEntry document:(MPDocument *)document;
++ (void) savePwGroup:(KPHPwGroup*)pwGroup document:(MPDocument *)document;
 + (KPHPwEntry*) entryToPwEntry:(KPKEntry*)entry;
 + (KPHPwGroup*) groupToPwGroup:(KPKGroup*)group;
 @end

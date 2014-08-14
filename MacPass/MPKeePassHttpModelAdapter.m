@@ -9,13 +9,32 @@
 #import "MPKeePassHttpModelAdapter.h"
 
 @implementation MPKeePassHttpModelAdapter
-+ (KPKEntry*) pwEntryToEntry:(KPHPwEntry*)pwEntry
++ (void) savePwEntry:(KPHPwEntry*)pwEntry document:(MPDocument *)document
 {
-    return nil;
+    KPKEntry* original = [document findEntry:pwEntry.Uuid];
+    if(original == nil){
+        original = [KPKEntry new];
+    }
+    
+    original.username = pwEntry.Strings[[KPHUtil globalVars].PwDefs.UserNameField];
+    original.password = pwEntry.Strings[[KPHUtil globalVars].PwDefs.PasswordField];
+    original.url = pwEntry.Strings[[KPHUtil globalVars].PwDefs.UrlField];
+    original.title = pwEntry.Strings[[KPHUtil globalVars].PwDefs.TitleField];
+    
+    //TODO Does this actually save the entry?
+    [document saveDocument:original];
 }
-+ (KPKGroup*) pwGroupToGroup:(KPHPwGroup*)pwGroup
++ (void) savePwGroup:(KPHPwGroup*)pwGroup document:(MPDocument *)document
 {
-    return nil;
+    KPKGroup* original = [document findGroup:pwGroup.Uuid];
+    if(original == nil){
+        original = [KPKGroup new];
+    }
+    
+    //TODO Convert KPHGroup to KPKGroup
+    
+    //TODO Does this actually save the entry?
+    [document saveDocument:original];
 }
 + (KPHPwEntry*) entryToPwEntry:(KPKEntry*)entry
 {

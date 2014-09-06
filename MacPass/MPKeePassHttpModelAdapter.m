@@ -11,6 +11,7 @@
 @implementation MPKeePassHttpModelAdapter
 + (void) savePwEntry:(KPHPwEntry*)pwEntry document:(MPDocument *)document
 {
+    NSLog(@"UUID: %@",pwEntry.Uuid);
     KPKEntry* original = [document findEntry:pwEntry.Uuid];
     if(original == nil){
         original = [KPKEntry new];
@@ -26,12 +27,15 @@
 }
 + (void) savePwGroup:(KPHPwGroup*)pwGroup document:(MPDocument *)document
 {
+    NSLog(@"Saving pwGroup: %@", pwGroup.Uuid);
     KPKGroup* original = [document findGroup:pwGroup.Uuid];
     if(original == nil){
         original = [KPKGroup new];
     }
-    
-    //TODO Convert KPHGroup to KPKGroup
+
+    for(KPHPwEntry* entry in pwGroup.Entries){
+        [MPKeePassHttpModelAdapter savePwEntry:entry document:document];
+    }
     
     //TODO Does this actually save the entry?
     [document saveDocument:original];
